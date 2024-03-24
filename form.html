@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input[type="text"],
+        input[type="email"],
+        input[type="no hp"],
+        select {
+            font-weight: 100;
+            margin-bottom: 20px; 
+            padding: 8px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+
+        .form-check {
+            margin-bottom: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+    
+<form action="landingdom.html" method="POST">
+    <label for="nama">Nama</label><br>
+    <input type="text" id="nama" name="nama" required placeholder="Nama lengkap"><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required placeholder="Email aktif"><br>
+
+    <label for="no hp">No HP</label><br>
+    <input type="no hp" id="no hp" name="no hp" required placeholder="No HP aktif"><br>
+    
+    <label for="jenis_kelamin">Jenis Kelamin</label><br>
+    <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki">
+    <label for="laki_laki">Laki-laki</label><br>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+    <label for="perempuan">Perempuan</label><br>
+
+    <label for="prodi">Prodi</label><br>
+    <select id="prodi" name="Prodi" type="prodi">
+        <option value="Teknologi Informasi">Teknologi Informasi</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+        <option value="lainnya">Lainnya</option>
+    </select><br>
+
+    <label for="hobi">Hobi</label><br>
+    <input type="checkbox" id="hobi" name="hobi">
+    <label for="hobi1">Membaca</label><br>
+    <input type="checkbox" id="hobi1" name="hobi1" value="membaca">
+    <label for="hobi2">Menulis</label><br>
+    <input type="checkbox" id="hobi2" name="hobi2" value="membaca">
+    <label for="hobi3">Menyanyi</label><br>
+    <input type="checkbox" id="hobi3" name="hobi3" value="menyanyi">
+    <label for="hobi4">Olahraga</label><br>
+    
+    <label for="alamat">Alamat</label><br>
+    <textarea id="alamat" name="alamat" rows="2" placeholder="Alamat lengkap"></textarea><br>
+
+    <label for="file">Foto Diri</label><br>
+    <input type="file" id="file" name="file">
+
+
+    <p>
+        <input type="submit" name="submit" id="submit" value="Daftar" />
+    </p>
+
+</form>
+
+
+
+</body>
+</html>
